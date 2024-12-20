@@ -11,7 +11,7 @@ This Discourse plugin adds template placeholders to the composer based on catego
 ## Installation
 
 Follow the [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) guide, using
-`git clone https://github.com/yourusername/discourse-composer-template-placeholder.git`
+`git clone https://github.com/bluefroguk1/discourse-placeholder.git`
 
 ## Configuration
 

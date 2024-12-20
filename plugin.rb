@@ -4,12 +4,13 @@
 # authors: Steven
 # url: https://github.com/bluefroguk1/discourse-placeholder
 # required_version: 2.7.0
-# transpile_js: true
 
 enabled_site_setting :composer_template_placeholder_enabled
 
 register_asset 'stylesheets/common/composer-template-placeholder.scss'
 register_asset 'javascripts/discourse/api-initializers/composer-placeholder.js'
+register_asset 'config/locales/client.en.yml'
+register_asset 'config/locales/server.en.yml'
 
 after_initialize do
   # Add any server-side code here if needed

@@ -19,12 +19,12 @@ export default {
           },
           
           setPlaceholder() {
-              if(!this.siteSettings.composer_template_placeholder_enabled) {
+              if(!this.siteSettings.composer_template_placeholder_enabled?) {
                 return;
               }
               const category = this.model?.category;
               if (category?.topic_template) {
-                  this.model.set('replyPlaceholder', category.topic_template);
+                  this.model.set('replyPlaceholder', category.topic_template || null);
               } else {
                   this.model.set('replyPlaceholder', null);
               }
