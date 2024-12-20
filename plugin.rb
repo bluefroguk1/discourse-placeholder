@@ -2,13 +2,11 @@
 # about: Adds template placeholders to the composer based on category templates
 # version: 1.0.0
 # authors: Steven
-# url: https://github.com/yourusername/discourse-composer-template-placeholder
+# url: https://github.com/bluefroguk1/discourse-placeholder
 # required_version: 2.7.0
 # transpile_js: true
 
 enabled_site_setting :composer_template_placeholder_enabled
-
-register_svg_icon "far-clipboard" if respond_to?(:register_svg_icon)
 
 register_asset 'stylesheets/common/composer-template-placeholder.scss'
 register_asset 'javascripts/discourse/api-initializers/composer-placeholder.js'

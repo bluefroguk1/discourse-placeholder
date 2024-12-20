@@ -1,1 +1,16 @@
-// Styles for composer template placeholder 
+/* Styles for composer template placeholder */
+
+.composer-placeholder {
+  font-style: italic;
+  color: #999;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.composer-placeholder::before {
+  content: "Template Placeholder: ";
+  font-weight: bold;
+}
