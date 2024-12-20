@@ -19,7 +19,7 @@ export default {
           },
           
           setPlaceholder() {
-              if(!this.siteSettings.composer_template_placeholder_enabled?) {
+              if(!this.siteSettings.composer_template_placeholder_enabled) {
                 return;
               }
               const category = this.model?.category;
