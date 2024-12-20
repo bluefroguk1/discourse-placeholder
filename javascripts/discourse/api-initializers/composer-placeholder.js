@@ -1,5 +1,4 @@
 import { withPluginApi } from 'discourse/lib/plugin-api';
-import { observes } from '@ember/object';
 
 export default {
     name: 'composer-template-placeholder',
@@ -16,11 +15,8 @@ export default {
           init() {
             this._super(...arguments);
             this.setupPlaceholder();
+            this.addObserver('model.category', this, this.setPlaceholder);
           },
-          
-          categoryChanged: observes('model.category', function() {
-            this.setPlaceholder();
-          }),
           
           setPlaceholder() {
               if(!this.siteSettings.composer_template_placeholder_enabled) {
