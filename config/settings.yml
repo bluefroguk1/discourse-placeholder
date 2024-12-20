@@ -1,4 +1,0 @@
-plugins:
-  composer_template_placeholder_enabled:
-    default: false
-    client: true 
